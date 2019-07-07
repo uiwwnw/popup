@@ -193,6 +193,7 @@ var Popup = (function (Popup) {
                         min-width: 200px;
                         width: ${this.option.styleBoxWidth === 'auto' ? 'auto' : this.option.styleBoxWidth + 'px'};
                         height: ${this.option.styleBoxHeight === 'auto' ? 'auto' : this.option.styleBoxHeight + 'px'};
+                        -webkit-overflow-scrolling: auto;
                         margin-top: ${this.option.styleHeaderHeight}px;
                         margin-bottom: ${this.option.styleFooterHeight}px;
                         box-shadow: 0 0 ${this.option.styleBoxShadow}px rgba(0,0,0,0.3);
