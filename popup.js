@@ -402,23 +402,3 @@ var Popup = (function (Popup) {
 
     return Popup;
 }(Popup || {}));
-var a = new Popup({
-    id: 'a',
-    styleBoxWidth: 400,
-    textHeader: 'aaa',
-    textContent: '<h1>dwdw</h1>',
-    textConfirm: 'ds',
-    fnConfirm: function() {
-        this.close();
-        b.open();
-    },
-});
-var b = new Popup({
-    id: 'b',
-});
-a.open({
-    textHeader: 'dadawdwadawdawd',
-    textContent: 'dasdad',
-    textConfirm: 'dasd',
-    textCancel: ' '
-});

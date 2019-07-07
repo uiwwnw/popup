@@ -4,10 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="popup.js" defer></script>
+    <script src="popup.js"></script>
     <title>Document</title>
 </head>
 <body>
-    
+    <button onclick="a.open()">a</button>
+    <script>
+        var a = new Popup({
+            id: 'a',
+            styleBoxWidth: 400,
+            textHeader: '다른팝업호출하기',
+            textContent: '<h1>처음선언한옵션</h1>',
+            textConfirm: '팝업호출',
+            fnConfirm: function() {
+                this.close();
+                b.open();
+            },
+        });
+        var b = new Popup({
+            id: 'b',
+        });
+        a.open({
+            textHeader: '두번째옵션',
+            textContent: '두번째옵션',
+        });
+    </script>
 </body>
 </html>
