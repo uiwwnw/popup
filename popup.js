@@ -41,6 +41,9 @@ var Popup = (function (Popup) {
             styleFooterButtonBorderWidth: 1,
             styleFooterButtonBorderColor: '#ddd',
 
+            // TODO 버튼 테마
+            // TODO 액티브 컬러 농도 자동 적용
+
             styleButtonCloseSize: 20
         },
         contents = {
