@@ -271,6 +271,9 @@ var Popup = (function (Popup) {
                         border-left: ${this.option.styleFooterButtonBorderWidth}px solid ${this.option.styleFooterButtonBorderColor};
                         background: 0;
                     }
+                    ${scoped} .${this.option.classNameButtonCancel}:active {
+                        background: #ddd;
+                    }
                     ${scoped} .${this.option.classNameButtonCancel}:empty {
                         display: none;
                     }
