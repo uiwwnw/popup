@@ -244,6 +244,18 @@ var Popup = (function (Popup) {
                         border: none;
                         border-radius: 50%;
                         background: #fff;
+                        transition: background .3s;
+                    }
+                    ${scoped} .${this.option.classNameButtonClose}:after {
+                        position: absolute;
+                        top: -50%;
+                        left: -50%;
+                        width: 200%;
+                        height: 200%;
+                        content: '';
+                    }
+                    ${scoped} .${this.option.classNameButtonClose}:active {
+                        background: #ddd;
                     }
                     ${scoped} .${this.option.classNameButtonClose}:before {
                         font-size: ${this.option.styleButtonCloseSize}px;
