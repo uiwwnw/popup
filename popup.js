@@ -243,6 +243,7 @@ var Popup = (function (Popup) {
                         box-shadow: 0 0 ${this.option.styleBoxShadow}px rgba(0,0,0,0.5);
                         border: none;
                         border-radius: 50%;
+                        background: #fff;
                     }
                     ${scoped} .${this.option.classNameButtonClose}:before {
                         font-size: ${this.option.styleButtonCloseSize}px;
